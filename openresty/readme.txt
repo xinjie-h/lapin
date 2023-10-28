@@ -1,4 +1,4 @@
-1、添加路由：
+1. add routing：
   1）vueelement/src/router/modules/tools.js
     {
       path: 'xxtea',
@@ -9,9 +9,8 @@
         noCache: true
       }
     },
-  2) 创建views/tools/xxtea.vue文件
-    完成界面设计
-  3）创建api/tool.js
+  2) create 'views/tools/xxtea.vue' file to complete GUI stuffs.
+  3）create api/tool.js
   import request from '@/utils/request'
 
   export function queryToolXxtea(queryData) {
@@ -21,7 +20,7 @@
     data: queryData   
     })
   }
-  4) 使用API
+  4) use API
   import { queryToolXxtea } from '@/api/tool'
 
     handleFineData(isEncrypt) {
@@ -36,16 +35,16 @@
     }
 
 2、vue
-a,配置淘宝镜像
-npm install --registry=https://registry.npm.taobao.org 单次使用
-npm config set registry https://registry.npm.taobao.org 永远使用
-检验是否成功
+a. configure Taobao mirror
+npm install --registry=https://registry.npm.taobao.org for once
+npm config set registry https://registry.npm.taobao.org forever
+check successfull or not.
 npm config get registry
 npm info express
-还原仓库
+restore the repo
 npm config set registry https://registry.npmjs.org/
-b,更换成淘宝镜像及cnpm
+b. change to Taobao mirror &cnpm
 npm install -g cnpm --registry=https://registry.npm.taobao.org
-c, 执行
+c, execute
 git ls-remote -h -t https://github.com.cnpmjs.org/nhn/raphael.git
 
